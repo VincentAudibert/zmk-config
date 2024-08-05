@@ -22,14 +22,9 @@
             key-positions = <5 15>;
         };
 
-        Enter {
-            bindings = <&kp ENTER>;
-            key-positions = <29 28>;
-        };
-
-        Backspace {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <8 9>;
+        back2base {
+            bindings = <&to 0>;
+            key-positions = <0 1>;
         };
     };
 
@@ -40,8 +35,8 @@
             bindings = <
 &mt ESCAPE Q     &kp W           &kp E               &kp R             &kp T          &mt Y SQT          &mt RIGHT_BRACKET U  &kp I        &kp O            &mt LEFT_BRACKET P
 &mt LEFT_META A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt LS(G) G    &mt NON_US_HASH H  &mt LEFT_SHIFT J     &mt LCTRL K  &mt RIGHT_ALT L  &mt LEFT_META SEMICOLON
-&kp TAB          &kp Z           &kp X               &lt 4 C           &mt LS(V) V    &mt LS(N) B        &kp M                &kp COMMA    &kp DOT          &mt ENTER SLASH
-&to 1            &mo 2                                                                                                                     &kp ENTER        &kp SPACE
+&kp TAB          &lt 3 Z         &lt 2 X             &lt 1 C           &mt LS(V) V    &mt LS(N) B        &kp M                &kp COMMA    &kp DOT          &mt ENTER SLASH
+&kp BACKSPACE    &tog 1                                                                                                                    &kp ENTER        &kp SPACE
             >;
         };
 
@@ -49,35 +44,35 @@
             bindings = <
 &mt GRAVE NUMBER_1  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &mt RA(NUMBER_4) NUMBER_4  &mt RA(N5) N5    &mt NUMBER_6 LS(Y)  &kp N7    &kp N8         &kp N9        &mt EQUAL N0
 &kp LEFT_META       &kp LEFT_ALT      &kp LEFT_CONTROL  &kp LEFT_SHIFT             &trans           &kp MINUS           &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT
-&trans              &trans            &trans            &trans                     &trans           &kp LS(N)           &mkp MB4  &kp PAGE_DOWN  &kp PG_UP     &mkp MB5
-&to 2               &trans                                                                                                                       &trans        &trans
-            >;
-        };
-
-        numbers {
-            bindings = <
-&mt F1 KP_NUMBER_1    &mt F2 KP_NUMBER_2    &mt F3 KP_NUMBER_3  &mt F4 KP_NUMBER_4  &mt F5 KP_NUMBER_5    &mt F6 KP_NUMBER_6  &mt F7 KP_NUMBER_7  &mt F8 KP_NUMBER_8  &mt F9 KP_NUMBER_9  &mt F10 KP_NUMBER_0
-&kp LEFT_META         &kp LEFT_ALT          &kp LEFT_CONTROL    &kp LEFT_SHIFT      &kp F11               &kp F12             &kp LEFT_SHIFT      &kp LEFT_CONTROL    &kp LEFT_ALT        &kp LEFT_META
-&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_DOWN   &kp K_VOLUME_UP     &kp K_MUTE            &none               &kp K_PREVIOUS      &kp K_PLAY_PAUSE    &kp K_STOP          &kp K_NEXT
-&mo 2                 &trans                                                                                                                                          &none               &none
-            >;
-        };
-
-        move2 {
-            bindings = <
-&mt GRAVE NUMBER_1  &kp HOME        &kp UP_ARROW    &kp END          &mt RA(N5) N5    &mt NUMBER_6 LS(Y)  &kp N7    &kp N8         &kp N9        &mt EQUAL N0
-&trans              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans           &kp MINUS           &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT
-&trans              &trans          &trans          &trans           &trans           &kp LS(N)           &mkp MB4  &kp PAGE_DOWN  &kp PG_UP     &mkp MB5
-&none               &none                                                                                                          &none         &mo 1
+&trans              &kp Z             &kp X             &kp C                      &trans           &kp LS(N)           &mkp MB4  &kp PAGE_DOWN  &kp PG_UP     &mkp MB5
+&trans              &trans                                                                                                                       &trans        &trans
             >;
         };
 
         Numpad {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans                                                    &trans  &trans
+&trans         &trans        &trans            &trans          &trans    &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMLOCK
+&kp LEFT_META  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
+&trans         &trans        &trans            &none           &trans    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
+&trans         &trans                                                                                              &trans           &kp KP_NUMBER_0
+            >;
+        };
+
+        Fn {
+            bindings = <
+&trans         &trans        &trans            &trans          &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12
+&kp LEFT_META  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8
+&trans         &none         &none             &none           &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4
+&trans         &trans                                                                             &trans   &trans
+            >;
+        };
+
+        Media {
+            bindings = <
+&trans  &trans  &trans                &kp K_MUTE         &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_UP    &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans                                                                             &trans  &trans
             >;
         };
     };
