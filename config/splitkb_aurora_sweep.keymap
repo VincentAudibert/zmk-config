@@ -35,8 +35,8 @@
             bindings = <
 &mt ESCAPE Q     &mt LA(N2) W    &mt LA(N3) E        &mt N4 R          &mt N5 T       &mt Y SQT          &mt RIGHT_BRACKET U  &mt NUMBER_8 I  &mt N9 O         &mt LEFT_BRACKET P
 &mt LEFT_META A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt LS(G) G    &mt NON_US_HASH H  &mt LEFT_SHIFT J     &mt LCTRL K     &mt RIGHT_ALT L  &mt LEFT_META SEMICOLON
-&kp TAB          &lt 3 Z         &lt 2 X             &lt 1 C           &mt LS(V) V    &mt LS(N) B        &kp M                &kp COMMA       &kp DOT          &mt ENTER SLASH
-&kp BACKSPACE    &tog 1                                                                                                                       &kp ENTER        &kp SPACE
+&kp TAB          &kp Z           &lt 3 X             &lt 2 C           &mt LS(V) V    &mt LS(N) B        &kp M                &kp COMMA       &lt 4 DOT        &mt ENTER SLASH
+&kp BACKSPACE    &mo 1                                                                                                                        &kp ENTER        &kp SPACE
             >;
         };
 
@@ -69,10 +69,10 @@
 
         Media {
             bindings = <
-&trans  &trans  &trans                &kp K_MUTE         &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_UP    &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp C_BRIGHTNESS_DEC  &kp K_VOLUME_DOWN  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans                                                                             &trans  &trans
+&trans                &trans                &trans             &none            &trans        &trans  &trans  &trans  &trans  &trans
+&none                 &trans                &none              &none            &trans        &trans  &trans  &trans  &trans  &trans
+&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_MUTE    &trans  &trans  &trans  &trans  &trans
+&trans                &trans                                                                                          &trans  &trans
             >;
         };
     };
