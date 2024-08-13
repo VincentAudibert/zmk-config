@@ -35,8 +35,8 @@
             bindings = <
 &mt ESCAPE Q     &mt LA(N2) W    &mt LA(N3) E        &mt N4 R          &mt N5 T       &mt Y SQT          &mt RIGHT_BRACKET U  &mt NUMBER_8 I  &mt N9 O         &mt LEFT_BRACKET P
 &mt LEFT_META A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt LS(G) G    &mt NON_US_HASH H  &mt LEFT_SHIFT J     &mt LCTRL K     &mt RIGHT_ALT L  &mt LEFT_META SEMICOLON
-&kp TAB          &kp Z           &lt 3 X             &lt 2 C           &mt LS(V) V    &mt LS(N) B        &kp M                &kp COMMA       &lt 4 DOT        &mt ENTER SLASH
-&lt 1 BACKSPACE  &to 1                                                                                                                        &to 0            &mt ENTER SPACE
+&kp TAB          &kp Z           &kp X               &kp C             &mt LS(V) V    &mt LS(N) B        &kp M                &kp COMMA       &lt 4 DOT        &mt ENTER SLASH
+&lt 1 BACKSPACE  &lt 2 ESCAPE                                                                                                                 &lt 4 ENTER      &lt 3 SPACE
             >;
         };
 
@@ -45,7 +45,7 @@
 &mt GRAVE NUMBER_1  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &mt RA(NUMBER_4) NUMBER_4  &mt RA(N5) N5    &mt NUMBER_6 LS(Y)  &kp N7    &kp N8         &kp N9        &mt EQUAL N0
 &kp LEFT_META       &kp LEFT_ALT      &kp LEFT_CONTROL  &kp LEFT_SHIFT             &trans           &kp MINUS           &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT
 &trans              &kp Z             &kp X             &kp C                      &trans           &kp LS(N)           &mkp MB4  &kp PAGE_DOWN  &kp PG_UP     &mkp MB5
-&trans              &to 2                                                                                                                        &trans        &trans
+&trans              &trans                                                                                                                       &trans        &trans
             >;
         };
 
@@ -54,7 +54,7 @@
 &trans         &trans        &trans            &trans          &trans    &trans  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMLOCK
 &kp LEFT_META  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &trans
 &trans         &trans        &trans            &none           &trans    &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &trans
-&trans         &to 3                                                                                               &trans           &kp KP_NUMBER_0
+&trans         &trans                                                                                              &trans           &kp KP_NUMBER_0
             >;
         };
 
