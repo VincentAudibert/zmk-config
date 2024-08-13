@@ -36,7 +36,7 @@
 &mt ESCAPE Q     &mt LA(N2) W    &mt LA(N3) E        &mt N4 R          &mt N5 T       &mt Y SQT          &mt RIGHT_BRACKET U  &mt NUMBER_8 I  &mt N9 O         &mt LEFT_BRACKET P
 &mt LEFT_META A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt LS(G) G    &mt NON_US_HASH H  &mt LEFT_SHIFT J     &mt LCTRL K     &mt RIGHT_ALT L  &mt LEFT_META SEMICOLON
 &kp TAB          &kp Z           &lt 3 X             &lt 2 C           &mt LS(V) V    &mt LS(N) B        &kp M                &kp COMMA       &lt 4 DOT        &mt ENTER SLASH
-&kp BACKSPACE    &to 1                                                                                                                        &to 0            &kp SPACE
+&lt 1 BACKSPACE  &to 1                                                                                                                        &to 0            &mt ENTER SPACE
             >;
         };
 
