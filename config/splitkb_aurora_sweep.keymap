@@ -35,8 +35,8 @@
             bindings = <
 &mt ESCAPE Q     &mt LA(N2) W    &mt LA(N3) E        &mt N4 R          &mt N5 T       &mt Y SQT          &mt RIGHT_BRACKET U  &mt NUMBER_8 I  &mt N9 O         &mt LEFT_BRACKET P
 &mt LEFT_META A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &mt LS(G) G    &mt NON_US_HASH H  &mt LEFT_SHIFT J     &mt LCTRL K     &mt RIGHT_ALT L  &mt LEFT_META SEMICOLON
-&kp TAB          &kp Z           &kp X               &kp C             &mt LS(V) V    &mt LS(N) B        &kp M                &kp COMMA       &lt 4 DOT        &mt ENTER SLASH
-&lt 1 BACKSPACE  &lt 2 ESCAPE                                                                                                                 &lt 4 ENTER      &lt 3 SPACE
+&kp TAB          &kp Z           &kp X               &kp C             &mt LS(V) V    &mt LS(N) B        &kp M                &kp COMMA       &kp DOT          &mt ENTER SLASH
+&lt 1 BACKSPACE  &lt 2 ESCAPE                                                                                                                 &lt 3 ENTER      &lt 1 SPACE
             >;
         };
 
@@ -60,19 +60,10 @@
 
         Fn {
             bindings = <
-&trans         &trans        &trans            &trans          &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12
-&kp LEFT_META  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8
-&trans         &none         &none             &none           &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4
-&trans         &trans                                                                             &trans   &trans
-            >;
-        };
-
-        Media {
-            bindings = <
-&trans                &trans                &trans             &none            &trans        &trans  &trans  &trans  &trans  &trans
-&none                 &trans                &none              &none            &trans        &trans  &trans  &trans  &trans  &trans
-&kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp K_VOLUME_DOWN  &kp K_VOLUME_UP  &kp K_MUTE    &trans  &trans  &trans  &trans  &trans
-&trans                &trans                                                                                          &trans  &trans
+&trans         &trans        &trans            &trans          &trans        &trans  &kp F9  &kp F10  &kp F11  &kp F12
+&kp LEFT_META  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &trans        &trans  &kp F5  &kp F6   &kp F7   &kp F8
+&kp C_BRI_DN   &kp C_BRI_UP  &kp K_VOL_DN      &kp K_VOL_UP    &kp K_MUTE    &trans  &kp F1  &kp F2   &kp F3   &kp F4
+&trans         &trans                                                                                 &trans   &trans
             >;
         };
     };
