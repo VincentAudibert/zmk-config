@@ -44,7 +44,7 @@
             bindings = <
 &mt GRAVE NUMBER_1  &kp RA(NUMBER_2)  &kp RA(NUMBER_3)  &mt RA(NUMBER_4) NUMBER_4  &mt RA(N5) N5    &mt NUMBER_6 LS(Y)  &kp N7    &kp N8         &kp N9        &mt EQUAL N0
 &kp LEFT_META       &kp LEFT_ALT      &kp LEFT_CONTROL  &kp LEFT_SHIFT             &trans           &kp MINUS           &kp LEFT  &kp DOWN       &kp UP_ARROW  &kp RIGHT
-&trans              &kp Z             &kp X             &kp C                      &trans           &kp LS(N)           &mkp MB4  &kp PAGE_DOWN  &kp PG_UP     &mkp MB5
+&trans              &none             &kp K_CUT         &kp K_COPY                 &kp K_PASTE      &kp LS(N)           &mkp MB4  &kp PAGE_DOWN  &kp PG_UP     &mkp MB5
 &trans              &trans                                                                                                                       &trans        &trans
             >;
         };
